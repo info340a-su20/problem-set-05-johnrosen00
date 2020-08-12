@@ -81,7 +81,7 @@ function addNewTask() {
   state.taskList.push(
     {id:state.taskList.length + 1,description:state.inputtedText, complete:false}
   );
-  console.log("firstPass");
+  
   state.inputtedText = "";
   renderTaskList();
 }
@@ -109,7 +109,7 @@ input.addEventListener('input', function(){
 
 let addTaskBtn = document.querySelector("#add-task");
 
-addTaskBtn.addEventListener('click', addNewTask());
+addTaskBtn.addEventListener('click', addNewTask);
 
 //Time to fix some of the user experience. Define a new function `renderInput()`
 //that does two things:

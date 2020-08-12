@@ -23,7 +23,7 @@ for this event listener, do the following:
 */
 
 let submitBtn = document.querySelector("button");
-submitBtn.addEventListener('click', function(event) {
+form.addEventListener('submit', function(event) {
 
   event.preventDefault();
 
@@ -131,8 +131,8 @@ events that happen on BOTH the `#passwordInput` and `#passwordConfirmInput`
 elements. You can select the elements individually or using `querySelectorAll()`.
 */
 
-password.addEventListener('input', validatePasswordMatch());
-passwordConfirm.addEventListener('input', validatePasswordMatch());
+password.addEventListener('input', validatePasswordMatch);
+passwordConfirm.addEventListener('input', validatePasswordMatch);
 
 /* Last you'll need to only enable the "submit" button if the form is valid. Use
 the `querySelectorAll()` method to select all 4 of the <input> elements. Use the
